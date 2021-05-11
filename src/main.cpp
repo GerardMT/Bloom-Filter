@@ -8,7 +8,7 @@ using namespace std;
 
 int main() {
     fstream file;
-    string filename("../data/lorem_ipsum.txt");
+    string filename("../res/data/lorem_ipsum.txt");
     file.open(filename);
     if (!file.is_open()) {
         cout << "Could not open file " << filename << endl;
