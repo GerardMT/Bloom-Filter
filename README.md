@@ -1,5 +1,5 @@
 # Bloom Filter
-A simple non-generic implementation of a counting Bloom filter.
+A simple non-generic implementation of a Counting Bloom filter.
 
 A more complete documentation can be found [here](docs/report/report.pdf).
 
