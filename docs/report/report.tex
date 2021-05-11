@@ -1,6 +1,6 @@
 \documentclass{article}
 
-\title{Homework: Counting Bloom filter}
+\title{Counting Bloom filter}
 \author{Gerard Martin Teixidor}
 
 \usepackage{graphicx}
@@ -11,7 +11,7 @@
 \maketitle
 
 \section*{Description}
-A Bloom filter\cite{bloom} is a probabilistic data structure which allows to test whether an element is a member of a set. While Bloom filters does not allow to remove elements, Counting Bloom filter\cite{counting} is an extension of the original data structure which allows the delete operation. Notice that Counting bloom filters represent a multiset instead of a set. Both Bloom filters are considered probabilistic since false positive matches are possible, but false negative matches are not.
+A Bloom filter~\cite{bloom} is a probabilistic data structure which allows to test whether an element is a member of a set. While Bloom filters does not allow to remove elements, Counting Bloom filter~\cite{counting} is an extension of the original data structure which allows the delete operation. Notice that Counting bloom filters represent a multiset instead of a set. Both Bloom filters are considered probabilistic since false positive matches are possible, but false negative matches are not.
 
 A Bloom filter is a bit array of $m$ bits initially all set to $0$. When an element is inserted, $k$ hash functions map the element to $k$ different positions, setting the bit of those positions to $1$. To check if an element is in the set, as the insert operation, the element hashed against $k$ hash functions to retrieve the position. If all positions are set to $1$, the elements belongs to the set. Notice that those bits could be set to $1$ because the insertion of other elements, being a false positive.
 
@@ -48,6 +48,6 @@ List of the implemented operations with a brief description and their time compl
 \end{description}
 
 \bibliographystyle{unsrt}
-\bibliography{main.bib}
+\bibliography{report.bib}
 
 \end{document}
